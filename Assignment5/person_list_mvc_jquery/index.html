@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!-- Basic Page Needs
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <meta charset="utf-8">
+	  <title>My portfolio</title>
+	  <meta name="description" content="IMP portfolio">
+	  <meta name="author" content="Stella Pagot">
+
+	  <!-- Mobile Specific Metas
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <!-- FONT
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
+
+	  <!-- CSS
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="../../portfolio/css/skeletonimport.css">
+	</head>
+	<body>
+		<div class="container">
+  		<div class="navbar-spacer"></div>
+  		<nav class="navbar">
+  			<div class="container">
+  				<div class="three columns" id="title" style="text-align: center; border-right: 1px solid #eee;">
+  					<h2>My portfolio</h2>
+  				</div>
+  				<ul class="navbar-list" id="mainList">
+  					<a class="navbar-link" href="../../portfolio/index.html">
+  						<li class="navbar-item">
+  							<h5>Home</h5>
+  						</li>
+  					</a>
+  					<a class="navbar-link" href="../../Assignment1/index.html">
+  						<li class="navbar-item">
+  							<h5>Lab 1</h5>
+  						</li>
+  					</a>
+  					<!-- dd menu -->
+  					<li class="navbar-item dropdown">
+  						<h5>Lab 2</h5>
+  						<ul class="navbar-list dropdown-content">
+  							<a class="navbar-link" href="../../Assignment2/person_list_responsive/index.html"><li><h5>Person list (responsive)</h5></li></a>
+  							<a class="navbar-link" href="../../Assignment2/without_menu/index.html"><li><h5>Page without menu</h5></li></a>
+  							<a class="navbar-link" href="../../Assignment2/with_menu/index.html"><li><h5>Page with menu</h5></li></a>
+  						</ul>
+  					</li>
+  					<!-- dd end -->
+            <!-- dd menu -->
+            <li class="navbar-item dropdown">
+              <h5>Lab 3</h5>
+              <ul class="navbar-list dropdown-content">
+                <a class="navbar-link" href="../../Assignment3/chat/index.html"><li><h5>Chat</h5></li></a>
+                <a class="navbar-link" href="../../Assignment3/person_list_mvc/index.html"><li><h5>Person list (MVC)</h5></li></a>
+                <a class="navbar-link" href="../../Assignment3/web_radio/index.html"><li><h5>Web radio</h5></li></a>
+              </ul>
+            </li>
+            <!-- dd end -->
+            <!-- dd menu -->
+            <li class="navbar-item dropdown">
+              <h5>Lab 4</h5>
+              <ul class="navbar-list dropdown-content">
+                <a class="navbar-link" href="../../Assignment4/draw_app/index.html"><li><h5>Draw app</h5></li></a>
+                <a class="navbar-link" href="../../Assignment4/game/index.html"><li><h5>Small Game</h5></li></a>
+              </ul>
+            </li>
+            <!-- dd end -->
+						<!-- dd menu -->
+	          <li class="navbar-item dropdown selected">
+	            <h5>Lab 5</h5>
+	            <ul class="navbar-list dropdown-content">
+	              <a class="navbar-link" href="./index.html"><li><h5>Person list (jQuery)</h5></li></a>
+	              <a class="navbar-link" href="../simple_app_ajax/index.html"><li><h5>Simple app using AJAX</h5></li></a>
+	            </ul>
+	          </li>
+	          <!-- dd end -->
+						<a class="navbar-link" href="../../Assignment6/flickr_photo_app/index.html">
+	            <li class="navbar-item">
+	              <h5>Lab 6</h5>
+	            </li>
+	          </a>
+						<li class="navbar-item" id="hideButton" style="display: none;">
+	            <button name="button" type="button" onclick="hideMenu()">Hide</button>
+	          </li>
+  				</ul>
+  			</div>
+  		</nav>
+  	</div>
+
+		<header>
+			Fifth assignment : Person list (jQuery)
+		</header>
+		<br>
+
+		<h1 class="lab">Answer to questions</h1>
+		<h4 class="lab"> What you can do with  jQuery? </h4>
+		<p class="lab">
+	  	jQuery can be used to handle Document Object Model (DOM) elements (finding, selecting, altering), for example selecting all elements with the same property, altering its style/attributes, adding event hanldler to this element and so on. You can also parse JSON files, do AJAX, create effects and animations, or even add plugins.
+		</p>
+
+		<h4 class="lab"> How it can help you as web developer? </h4>
+		<p class="lab">
+			jQuery simplifies the whole process for this DOM elements handling, by being clear and brief, so that web developers work more efficiently. Since it eliminates cross-browser incompatibilities, it is also easier for web devs to develop cross platform web apps. jQuery is also highly extensible thanks to plugins, so web devs can share plugins or use ready-made ones.
+		</p>
+
+		<h4 class="lab"> If you think our earlier participant list app, in what kind of issues you could use jQuery? </h4>
+		<p class="lab">
+	  	Change html with jQuery instead of using the .innerHTML method or using .append to add the new names, in other words, everything related to DOM manipulation.
+		</p>
+
+		<h4 class="lab"> What are CDNs? What kind of benefits you get if you use them? </h4>
+		<p class="lab">
+			Content delivery network (CDN) is a computer network that is used to share content or data to users through the Internet, based on the user's locaisation. Using CDNs speed up the content delivery in cases of high taffic websites. They also make te delivery faster thanks to several CDN servers existing most of the time, so that the user gets to download content from the closest server. CNDs also reduce bandwidth consumption and also secure data.
+		</p>
+
+		<h1 class="lab"> Person list </h1>
+		<div class="centre">
+			<input id="person_name" name="name" type="text" placeholder="Enter a name...">
+			<button id="button1" onclick="addPerson()"> Add</button>
+		<div>
+		<p class ="centre" id="list"></p>
+	</body>
+	<!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.slim.js"
+		integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+		crossorigin="anonymous">
+	</script>
+	<script src="Person.js"></script>
+	<script src="personModel.js"></script>
+	<script src="viewController.js"></script>
+	<script src="../../portfolio/menu.js"></script>
+</html>

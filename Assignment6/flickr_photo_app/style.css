@@ -1,0 +1,116 @@
+/* Part of the code generated with http://www.responsivegridsystem.com/calculator/
+and part taken from http://getskeleton.com/
+*/
+
+body{ background-color: #4182b9; }
+
+header{
+  text-align: center;
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1{
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+  -webkit-margin-before: 1.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}
+
+input{
+  height: 38px;
+  padding: 6px 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4c0b8;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+input:focus{
+  border-width: 1px;
+  border-style: solid;
+  border-style: #33c3f0;
+  outline: 0;
+}
+
+.searchArea{
+  width: 100%;
+  text-align: center;
+  padding-top: 8em;
+  padding-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchbutton{
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #c4C0b8;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #6d5a3c;
+  border-radius: 4px;
+  border-color: #c4c0b8;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#searchbutton:hover{
+  color: #b9b5ae;
+  border-color: #888;
+  outline: 0;
+  background-color: #53452e;
+}

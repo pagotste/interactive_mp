@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Basic Page Needs
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <meta charset="utf-8">
+	  <title>My portfolio</title>
+	  <meta name="description" content="IMP portfolio">
+	  <meta name="author" content="Stella Pagot">
+
+	  <!-- Mobile Specific Metas
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> <!--preventing mobile zooming -->
+
+	  <!-- FONT
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
+
+	  <!-- CSS
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="./cssReset.css">
+		<link rel="stylesheet" href="../../portfolio/css/skeletonimport.css">
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div class="container">
+	    <div class="navbar-spacer"></div>
+	    <nav class="navbar">
+	      <div class="container">
+	        <div class="three columns" id="title"  style="text-align: center; border-right: 1px solid #eee;">
+	          <h2>My portfolio</h2>
+	        </div>
+	        <ul class="navbar-list" id="mainList">
+	          <a class="navbar-link" href="../../portfolio/index.html">
+	            <li class="navbar-item">
+	              <h5>Home</h5>
+	            </li>
+	          </a>
+	          <a class="navbar-link" href="../../Assignment1/index.html">
+	            <li class="navbar-item">
+	              <h5>Lab 1</h5>
+	            </li>
+	          </a>
+	          <!-- dd menu -->
+	          <li class="navbar-item dropdown selected">
+	            <h5>Lab 2</h5>
+	            <ul class="navbar-list dropdown-content">
+	              <a class="navbar-link" href="../person_list_responsive/index.html"><li><h5>Person list (responsive)</h5></li></a>
+	              <a class="navbar-link" href="./index.html"><li><h5>Page without menu</h5></li></a>
+	              <a class="navbar-link" href="../with_menu/index.html"><li><h5>Page with menu</h5></li></a>
+	            </ul>
+	          </li>
+	          <!-- dd end -->
+						<!-- dd menu -->
+	          <li class="navbar-item dropdown">
+	            <h5>Lab 3</h5>
+	            <ul class="navbar-list dropdown-content">
+	              <a class="navbar-link" href="../../Assignment3/chat/index.html"><li><h5>Chat</h5></li></a>
+	              <a class="navbar-link" href="../../Assignment3/person_list_mvc/index.html"><li><h5>Person list (MVC)</h5></li></a>
+	              <a class="navbar-link" href="../../Assignment3/web_radio/index.html"><li><h5>Web radio</h5></li></a>
+	            </ul>
+	          </li>
+	          <!-- dd end -->
+						<!-- dd menu -->
+	          <li class="navbar-item dropdown">
+	            <h5>Lab 4</h5>
+	            <ul class="navbar-list dropdown-content">
+	              <a class="navbar-link" href="../../Assignment4/draw_app/index.html"><li><h5>Draw app</h5></li></a>
+	              <a class="navbar-link" href="../../Assignment4/game/index.html"><li><h5>Small Game</h5></li></a>
+	            </ul>
+	          </li>
+	          <!-- dd end -->
+	          <!-- dd menu -->
+	          <li class="navbar-item dropdown">
+	            <h5>Lab 5</h5>
+	            <ul class="navbar-list dropdown-content">
+	              <a class="navbar-link" href="../../Assignment5/person_list_mvc_jquery/index.html"><li><h5>Person list (jQuery)</h5></li></a>
+	              <a class="navbar-link" href="../../Assignment5/simple_app_ajax/index.html"><li><h5>Simple app using AJAX</h5></li></a>
+	            </ul>
+	          </li>
+	          <!-- dd end -->
+	          <a class="navbar-link" href="../../Assignment6/flickr_photo_app/index.html">
+	            <li class="navbar-item">
+	              <h5>Lab 6</h5>
+	            </li>
+	          </a>
+						<li class="navbar-item" id="hideButton" style="display: none;">
+	            <button name="button" type="button" onclick="hideMenu()">Hide</button>
+	          </li>
+	        </ul>
+	      </div>
+	    </nav>
+	  </div>
+		<header>
+			<h1> Responsive Web design </h1>
+		</header>
+		<div class="main">
+			<br>
+			<h2> Answer to questions </h2>
+			<h5> What is the purpose of the RWD? Why it is used? How things are done before RWD? What is the difference?</h5>
+			<p>
+				The purpose of responsive web design is to make web pages adapt to the device used to display a web page, without the need of a different web page/HTML code specific to the device, and with the same content on every device thanks to its size being defined with relative sizing and/or media queries defined according on the screen resolution.
+			</p>
+			<p>
+				It is used because of the various screen resolutions that a user can have. For example, before RWD was used, everything had its size defined with pixels or inches. But on a screen with a width of 380px, an element wider than this size can’t be displayed properly. Some text elements can also become cropped and so on. Now if the element’s width was defined in percentages, say 80%, it would have a width of 304px.
+			</p>
+
+			<h5> How css media queries can help you building responsive web sites?</h5>
+			<p>
+				CSS media queries can be used to detect the screen resolution of the device the web page is displayed on. Thanks to that, we can define the CSS we want to use for this resolution, to display every element or change the way to display some elements (a menu for example).
+			</p>
+
+			<h5> Why to use em (font) based sizing for example margins?</h5>
+			<p>
+				Em based sizing is relative to the font size the element inherited. That means that instead of having a set size, the element can have its size change depending on the base size. If we take margins as an example, if we define it in px the margin will keep the same size on every device, so it could affect the way text is displayed and move some elements around. If the margin is defined in em, the margin will be relative to the font size, in other words, relative to the screen size. That would mean the elements stay where they are supposed to be.
+			</p>
+
+			<h5> Article is already 7 years old, do we have any new technology which can be used to achieve same type of UI responsiveness as described in the article.</h5>
+			<p>
+				Nowadays, we can use CSS Grid (2 dimensions)/Flexbox (1D) to add in responsiveness by using fluid containers to put content in. These elements adapt to the screen size of the device and change the inner elements’ layout according to it. Grids are used mostly for wide layouts while Flexbox is intended for simpler layouts.
+			</p>
+
+			<h5> How could you prevent user zooming the site on mobile?</h5>
+			<p>
+				To prevent the user from zooming, we can use a meta tag with the properties width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0 (see meta tags of this page).
+			</p>
+
+			<h5>HTML5 specification introduces new semantic elements. One of them is a <b>figure</b> element. Can you say why you should use it in addition to standard <b>img</b> elements?</h5>
+			<p>
+				A figure markup should be used because it can contain more than one element, such as a caption for the figure contained, or a list of images. Also, a figure markup is not restricted to images, it can contain several types of media elements (video, audio, code…).
+			</p>
+
+			<h2> RWD Examples </h2>
+			<figure>
+				<img src="./imagesrwd/tbgmobile.jpg">
+				<img src="./imagesrwd/tbgregular.jpg" >
+				<figcaption><a href="https://www.bostonglobe.com/">The Boston Globe's</a> front page on mobile and desktop</figcaption>
+			</figure>
+			<figure>
+				<img src="./imagesrwd/timemobile.jpg">
+				<img src="./imagesrwd/timetablet.jpg">
+				<figcaption><a href="http://time.com/">Time's</a> front page on mobile and tablet</figcaption>
+			</figure>
+			<figure>
+				<img src="./imagesrwd/w3smobile.jpg">
+				<img src="./imagesrwd/w3stablet.jpg">
+				<img src="./imagesrwd/w3sregular.jpg">
+				<figcaption><a href="https://www.w3schools.com/">W3S's</a> front page on mobile, tablet and desktop</figcaption>
+			</figure>
+		</div>
+	</body>
+	<!-- Scripts
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="../../portfolio/menu.js"></script>
+</html>

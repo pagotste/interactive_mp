@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+}
+
+header{
+	background-color: #fbf7f0;
+	padding-top: 0.8em;
+	text-align: center;
+}
+
+html{
+	min-height: 100%;
+	position: relative;
+	font-size: 62.5%;
+}
+body{
+	height: 100%;
+	background-color: #cee3f6;
+	padding-top: 1em;
+	font-size: 1.5em;
+	line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+.main-content{
+	margin-left: 20%;
+	padding: 1.5em;
+	width: 80%;
+	float: left;
+}
+
+@media screen and (max-width: 600px){
+	.main{ width: 100%;	}
+
+	.main-content{
+		margin-left: 0;
+		width: 100%;
+	}
+}
+
+/* Typography
+*****************************/
+
+h1{
+	font-size: 2em;
+	padding-bottom: 0.6em;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 1.75em;
+	padding-bottom: 0.8em;
+	font-weight: bold;
+}
+
+.selected h2{	color: grey }
+
+p{
+	margin-left: 0.6em;
+	font-family: Helvetica;
+	padding-bottom:0.75em;
+}
+
+.publishDate{
+	font-size:0.75em;
+	margin-left: 1.5em;
+	padding-bottom:0.4em;
+}
+
+a{
+	text-decoration: underline;
+	color: #29088a;
+}
+
+div.menu a{ text-decoration: none; }
+
+a:hover{ color: red; }
+
+div.menu h2:hover{ color: grey; }
+
+/* Dropdown menu
+******************************/
+
+
+.menu{
+	position: absolute;
+  overflow: hidden;
+	padding: 1em;
+	width: 20%;
+	float: left;
+	height: 100%;
+	background-color: #b9ccdd;
+	border-right-color: #fbf7f0;
+	border-right-width: 0.8em;
+	border-right-style: solid;
+}
+
+@media screen and (max-width: 600px){
+	.menu{
+		width: 100%;
+		text-align: center;
+		border-bottom: solid white;
+		position: relative;
+		border-right: none;
+	}
+}
+
+.dropdown-content{
+	display: none;
+	position: relative;
+	max-width: 60%;
+}
+
+.dropdown:hover .dropdown-content { display:inline-block; }
+
+.dropdown-content li{
+	margin-left: 1em;
+	margin-bottom: 0.8em;
+}
+
+.dropdown-content a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+/* Other
+*********************************/
+
+figure{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+}
+
+img{ width: 80%; }

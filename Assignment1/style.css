@@ -1,0 +1,47 @@
+body{
+	background-color: #3c4f6d;
+	margin: 0;
+	color: white;
+}
+
+.header{
+	margin-top:4em;
+	height: 50px;
+	padding-bottom: 10px;
+	font-family: Helvetica;
+	background-color: #26364f;
+	font-size:1.5em;
+	text-align: center;
+}
+
+h1.lab {
+	padding-left: 0.3em;
+	color: white;
+	text-decoration: underline;
+}
+
+h4.lab {
+	padding-left: 1em;
+	color: white;
+}
+
+p.lab {
+	color: white;
+	margin-left: 2em;
+}
+
+input {
+	border-radius: 4px;
+	color: black;
+}
+
+button{	color: black; }
+
+.centre {	text-align: center; }
+
+#button1 {
+	border-radius: 12px;
+	width: 5em;
+	background: linear-gradient(#dadde5 20%,#666970);
+	font-size: 1em;
+}

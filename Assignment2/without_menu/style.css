@@ -1,0 +1,46 @@
+header{
+	margin-top: 5em;
+	background-color: #fbf7f0;
+	padding-top: 0.8em;
+	text-align: center;
+}
+
+body{
+	background-color: #cee3f6;
+	padding-top: 1em;
+}
+
+div.main{	padding:1.5em; }
+
+h1{
+	font-size:2em;
+	padding-bottom: 0.6em;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+p{
+	margin-left: 0.6em;
+	font-family: Helvetica;
+	padding-bottom: 0.75em;
+}
+
+p.publishDate{
+	font-size: 0.75em;
+	margin-left: 1.5em;
+	padding-bottom: 0.4em;
+}
+
+a:hover{ color: red; }
+
+figure{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 2em;
+}
+
+img{
+	max-width: 30%;
+	margin-left: 2em;
+}

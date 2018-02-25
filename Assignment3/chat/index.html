@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>My portfolio</title>
+    <meta name="description" content="IMP portfolio">
+    <meta name="author" content="Stella Pagot">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<link rel="stylesheet" href="../../portfolio/css/skeletonimport.css">
+  	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="navbar-spacer"></div>
+  		<nav class="navbar">
+  			<div class="container">
+  				<div class="three columns" id="title" style="text-align: center; border-right: 1px solid #eee;">
+  					<h2>My portfolio</h2>
+  				</div>
+  				<ul class="navbar-list" id="mainList">
+  					<a class="navbar-link" href="../../portfolio/index.html">
+  						<li class="navbar-item">
+  							<h5>Home</h5>
+  						</li>
+  					</a>
+  					<a class="navbar-link" href="../../Assignment1/index.html">
+  						<li class="navbar-item">
+  							<h5>Lab 1</h5>
+  						</li>
+  					</a>
+  					<!-- dd menu -->
+  					<li class="navbar-item dropdown">
+  						<h5>Lab 2</h5>
+  						<ul class="navbar-list dropdown-content">
+  							<a class="navbar-link" href="../../Assignment2/person_list_responsive/index.html"><li><h5>Person list (responsive)</h5></li></a>
+  							<a class="navbar-link" href="../../Assignment2/without_menu/index.html"><li><h5>Page without menu</h5></li></a>
+  							<a class="navbar-link" href="../../Assignment2/with_menu/index.html"><li><h5>Page with menu</h5></li></a>
+  						</ul>
+  					</li>
+  					<!-- dd end -->
+            <!-- dd menu -->
+            <li class="navbar-item dropdown selected">
+              <h5>Lab 3</h5>
+              <ul class="navbar-list dropdown-content">
+                <a class="navbar-link" href="./index.html"><li><h5>Chat</h5></li></a>
+                <a class="navbar-link" href="../person_list_mvc/index.html"><li><h5>Person list (MVC)</h5></li></a>
+                <a class="navbar-link" href="../web_radio/index.html"><li><h5>Web radio</h5></li></a>
+              </ul>
+            </li>
+            <!-- dd end -->
+            <!-- dd menu -->
+            <li class="navbar-item dropdown">
+              <h5>Lab 4</h5>
+              <ul class="navbar-list dropdown-content">
+                <a class="navbar-link" href="../../Assignment4/draw_app/index.html"><li><h5>Draw app</h5></li></a>
+                <a class="navbar-link" href="../../Assignment4/game/index.html"><li><h5>Small Game</h5></li></a>
+              </ul>
+            </li>
+            <!-- dd end -->
+            <!-- dd menu -->
+            <li class="navbar-item dropdown">
+              <h5>Lab 5</h5>
+              <ul class="navbar-list dropdown-content">
+                <a class="navbar-link" href="../../Assignment5/person_list_mvc_jquery/index.html"><li><h5>Person list (jQuery)</h5></li></a>
+                <a class="navbar-link" href="../../Assignment5/simple_app_ajax/index.html"><li><h5>Simple app using AJAX</h5></li></a>
+              </ul>
+            </li>
+            <!-- dd end -->
+            <a class="navbar-link" href="../../Assignment6/flickr_photo_app/index.html">
+              <li class="navbar-item">
+                <h5>Lab 6</h5>
+              </li>
+            </a>
+            <li class="navbar-item" id="hideButton" style="display: none;">
+	            <button name="button" type="button" onclick="hideMenu()">Hide</button>
+	          </li>
+  				</ul>
+  			</div>
+  		</nav>
+  	</div>
+  	<header>
+  		<h1>Chat client using websocket</h1>
+  	</header>
+  		<div id="chatbox"></div>
+  	<br>
+  	<div class="centered">
+  		<input id="messageToSend" name="messageToSend" type="text" placeholder="Enter your message here...">
+  		<br><br>
+  		<button id="send" onclick="sendMessage()">Send</button>
+  	</div>
+    <br>
+    <h3>What happens if you send a message: ”LOGO”?</h1>
+    <p>
+      A random emote appears !
+      <figure style="text-align: center;">
+        <img src="./logo.jpg">
+      </figure>
+    </p>
+  </body>
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts.js"></script>
+  <script src="../../portfolio/menu.js"></script>
+</html>

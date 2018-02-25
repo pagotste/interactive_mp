@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  <title>My portfolio</title>
+	  <meta name="description" content="IMP portfolio">
+	  <meta name="author" content="Stella Pagot">
+		<!-- With theme from http://getskeleton.com/ -->
+
+		<!-- Mobile Specific Metas
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- FONT
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
+
+		<!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="../portfolio/css/normalize.css">
+		<link rel="stylesheet" href="../portfolio/css/skeletonimport.css">
+		<link rel="stylesheet" href="./style.css">
+
+	</head>
+	<body>
+	<div class="container">
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="three columns" id="title" style="text-align: center; border-right: 1px solid #eee;">
+          <h2>My portfolio</h2>
+        </div>
+        <ul class="navbar-list" id="mainList">
+          <a class="navbar-link" href="../portfolio/index.html">
+            <li class="navbar-item">
+              <h5>Home</h5>
+            </li>
+          </a>
+          <a class="navbar-link" href="./index.html">
+            <li class="navbar-item selected">
+              <h5>Lab 1</h5>
+            </li>
+          </a>
+					<!-- dd menu -->
+          <li class="navbar-item dropdown">
+            <h5>Lab 2</h5>
+            <ul class="navbar-list dropdown-content">
+              <a class="navbar-link" href="../Assignment2/person_list_responsive/index.html"><li><h5>Person list (responsive)</h5></li></a>
+              <a class="navbar-link" href="../Assignment2/without_menu/index.html"><li><h5>Page without menu</h5></li></a>
+              <a class="navbar-link" href="../Assignment2/with_menu/index.html"><li><h5>Page with menu</h5></li></a>
+            </ul>
+          </li>
+          <!-- dd end -->
+					<!-- dd menu -->
+          <li class="navbar-item dropdown">
+            <h5>Lab 3</h5>
+            <ul class="navbar-list dropdown-content">
+              <a class="navbar-link" href="../Assignment3/chat/index.html"><li><h5>Chat</h5></li></a>
+              <a class="navbar-link" href="../Assignment3/person_list_mvc/index.html"><li><h5>Person list (MVC)</h5></li></a>
+              <a class="navbar-link" href="../Assignment3/web_radio/index.html"><li><h5>Web radio</h5></li></a>
+            </ul>
+          </li>
+          <!-- dd end -->
+          <!-- dd menu -->
+          <li class="navbar-item dropdown">
+            <h5>Lab 4</h5>
+            <ul class="navbar-list dropdown-content">
+              <a class="navbar-link" href="../Assignment4/draw_app/index.html"><li><h5>Draw app</h5></li></a>
+              <a class="navbar-link" href="../Assignment4/game/index.html"><li><h5>Small Game</h5></li></a>
+            </ul>
+          </li>
+          <!-- dd end -->
+          <!-- dd menu -->
+          <li class="navbar-item dropdown">
+            <h5>Lab 5</h5>
+            <ul class="navbar-list dropdown-content">
+              <a class="navbar-link" href="../Assignment5/person_list_mvc_jquery/index.html"><li><h5>Person list (jQuery)</h5></li></a>
+              <a class="navbar-link" href="../Assignment5/simple_app_ajax/index.html"><li><h5>Simple app using AJAX</h5></li></a>
+            </ul>
+          </li>
+          <!-- dd end -->
+          <a class="navbar-link" href="../Assignment6/flickr_photo_app/index.html">
+            <li class="navbar-item">
+              <h5>Lab 6</h5>
+            </li>
+          </a>
+					<li class="navbar-item" id="hideButton" style="display: none;">
+						<button name="button" type="button" onclick="hideMenu()">Hide</button>
+					</li>
+        </ul>
+      </div>
+    </nav>
+	</div>
+
+	<div class="header">
+		First assignment : Person list
+	</div>
+		<br>
+		<div>
+			<h1 class="lab">Definitions</h1>
+			<h4 class="lab">HTML</h4>
+			<p class="lab">
+				HTML (which stands for Hypertext Markup Language) is a language used to create web pages.<br>
+				It creates hypertext thanks to markups, which is why it is called like that. HTML's markups are used to format the content : text, links, images, animations ...
+				You need a web browser to display HTML pages.
+			</p>
+			<h4 class="lab">CSS</h4>
+			<p class="lab">
+				CSS (Cascading Style Sheets) is a language used to manage the design of HTML pages.<br>
+				Thanks to CSS, you can set styles of every markup on the HTML page, instead of setting it individually. You can load CSS files directly through HTML code.
+			</p>
+			<h4 class="lab">JavaScript</h4>
+			<p class="lab">
+				JavaScript is a language used on web pages. It is a client based language : the client (user's web browser) will execute the code (opposed to server based languages).<br>
+				JavaScript creates small scripts on HTML pages in order to execute an effect, or a small animation. Most of the time JS is used to enhance the user interaction with the web page.<br>
+				One of JavaScript's advantages is that the user doesn't need to reload the page to execute the JS code.
+			</p>
+			<h4 class="lab">HTTP</h4>
+			<p class="lab">
+				HTTP (Hypertext Transfer Protocol) is a protocol used to establish communication between a client (web browser for example) and a web server.<br>
+				The client sends a request (HTML page,CSS..) to the server, the server looks for the information, interprets the result before sending a reply to the client.
+			</p>
+			<h4 class="lab">HTML5</h4>
+			<p class="lab">
+				HTML5 is the latest major revision of HTML, released in 2014. It is usually used alongside with CSS3 and JavaScript.<br>
+				HTML5 added and updated previous HTML revisions specifications (such as markups), and introduced a need for a "doctype" declaration at the beginning of HTML pages. The encoding process has also been updated.
+			</p>
+			<h4 class="lab">Dynamic HTML</h4>
+			<p class="lab">
+				Dynamic HTML (DHTML) is the name given to a set of techniques used to make a web page dynamic by modifying itself without reloading the page. It involves mostly event
+				handling and real-time positioning thanks to the use of CSS, JavaScript, HTML and the DOM.
+			</p>
+		</div>
+		<h1 class="lab">Person list</h1>
+		<div class="centre">
+			<input id="person_name" name="name" type="text"  placeholder="Enter a name...">
+			<button id="button1" onclick="add_person()">Add</button>
+		<div>
+		<p class ="centre" id="list"></p>
+	</body>
+	<!-- Scripts
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="./scripts.js"></script>
+	<script src="../portfolio/menu.js"></script>
+</html>
